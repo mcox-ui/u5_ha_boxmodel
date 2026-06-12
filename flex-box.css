@@ -1,0 +1,44 @@
+/* CSS Normalizing reset */
+* {
+  margin: 0; 
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: #f98888;
+}
+
+.contenedor_padre {
+
+    background-color: #a2e99b;
+    height: 300px;
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+
+    /* Alinear de manera vertical los elementos hijos dentro del contenedor padre */
+    align-items: center;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+
+    /* linear los elementos hijos dentro del contenedor padre de manera horizontal */
+    /* justify-content: center; */
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
+
+}
+
+.hijo {
+    background-color: #85b3f8;
+    width: 50px;
+    height: 50px;
+
+    display: grid;
+    place-items: center;
+}
